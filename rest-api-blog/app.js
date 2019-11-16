@@ -4,8 +4,6 @@ const logger = require('morgan')
 const errorHandler = require('errorhandler')
 const routes = require('./routes')
 
-
-
 // in-memory model
 let store = {
     posts: [
