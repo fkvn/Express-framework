@@ -19,15 +19,11 @@ app.use((req, res, next) => {
     return next();
 })
 
-
-
 /* Handling errors in Express 
    * This way will return a gracefull HTTP error 500
    * To be on the safe side, always use next for errors in routes
    * Put the return -> no other code is executed afterwards
 */
-
-
 app.get('/next', (req, res, next) => {
     setTimeout(() => {
         return next(new Error('Something is wrong'));
